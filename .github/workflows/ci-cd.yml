@@ -37,4 +37,4 @@ jobs:
         key: ${{ secrets.SERVER_SSH_KEY }}
         port: 22
         source: "."
-        target: "/home/ubuntu/simple-nodejs-app"
+        target: "/home/ec2-user/simple-nodejs-app"

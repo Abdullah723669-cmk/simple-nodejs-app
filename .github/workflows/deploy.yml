@@ -33,4 +33,4 @@ jobs:
             docker pull ${{ secrets.DOCKER_USERNAME }}/simple-nodejs-app:latest
             docker stop simple-nodejs-app:latest || true
             docker rm simple-nodejs-app:latest || true
-            docker run -d -p 5050:5000 --name node-app ${{ secrets.DOCKER_USERNAME }}/simple-nodejs-app:latest
+            docker run -d -p 5050:5000 --name simple-nodejs-app-v1 ${{ secrets.DOCKER_USERNAME }}/simple-nodejs-app:latest

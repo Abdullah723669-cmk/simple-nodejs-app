@@ -31,6 +31,6 @@ jobs:
           port: 22
           script: |
             docker pull ${{ secrets.DOCKER_USERNAME }}/simple-nodejs-app:v1
-            docker stop node-app || true
-            docker rm node-app || true
-            docker run -d -p 5005:5000 --name node-app ${{ secrets.DOCKER_USERNAME }}/simple-nodejs-app:v1
+            docker stop simple-nodejs-app:v1 || true
+            docker rm simple-nodejs-app:v1 || true
+            docker run -d -p 5050:5000 --name simple-nodejs-app:v1 ${{ secrets.DOCKER_USERNAME }}/simple-nodejs-app:v1

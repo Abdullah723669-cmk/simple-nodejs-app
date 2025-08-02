@@ -27,7 +27,7 @@ jobs:
         with:
           host: 13.53.206.62
           username: ec2-user
-          key: ${{ secrets.SERVER_SSH_KEY }}
+          key: ${{ secrets.SERVER_SSH_KEY_1 }}
           port: 22
           script: |
             docker pull ${{ secrets.DOCKER_USERNAME }}/simple-nodejs-app:v1
